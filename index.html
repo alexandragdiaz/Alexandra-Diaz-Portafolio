@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexandra Díaz — Desarrolladora Frontend & Fullstack. Construyo experiencias digitales con React, TypeScript, Spring Boot y más.">
+  <title>Alexandra Díaz | Desarrolladora Frontend</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="./favicon/a.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">AD<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="nav-drawer" id="navDrawer">
+    <ul>
+      <li><a href="#hero" class="drawer-link">Inicio</a></li>
+      <li><a href="#habilidades" class="drawer-link">Habilidades</a></li>
+      <li><a href="#proyectos" class="drawer-link">Proyectos</a></li>
+      <li><a href="#contacto" class="drawer-link">Contacto</a></li>
+    </ul>
+  </div>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid-lines" aria-hidden="true">
+      <div class="h-line" style="top:20%"></div>
+      <div class="h-line" style="top:50%"></div>
+      <div class="h-line" style="top:80%"></div>
+      <div class="v-line" style="left:25%"></div>
+      <div class="v-line" style="left:75%"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Disponible 
+      </div>
+
+      <h1 class="hero-name reveal delay-1">
+        Alexandra<br><em>Díaz</em>
+      </h1>
+
+      <div class="hero-meta reveal delay-2">
+        <span class="hero-role">Desarrolladora Frontend</span>
+        <span class="hero-sep">×</span>
+       
+      </div>
+
+      <p class="hero-desc reveal delay-3">
+        Transformo tu idea en una experiencia digital<br>
+      </p>
+
+      <div class="hero-actions reveal delay-4">
+        <a href="#proyectos" class="btn-primary">Ver proyectos <i class="fas fa-arrow-right"></i></a>
+        <a href="https://www.linkedin.com/in/alexandra-gutierrez-diaz-developer/" target="_blank" class="btn-ghost">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+
+      <div class="hero-photo reveal delay-5">
+        <div class="photo-frame">
+          <img src="./assets/img.jpeg" alt="Alexandra Díaz">
+        </div>
+        <div class="photo-tag">
+          <i class="fas fa-map-marker-alt"></i> Medellín, Colombia.
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Ver más</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="habilidades">
+      <div class="section-label reveal">Habilidades</div>
+      <h2 class="section-title reveal delay-1">Desarrollo <em>Frontend</em></h2>
+
+      <div class="skills-front-grid">
+
+        <div class="skill-front-card reveal delay-1">
+          <div class="sfc-icon"><i class="fab fa-html5"></i></div>
+          <span class="sfc-name">HTML5</span>
+          <span class="sfc-level">Semántica & accesibilidad</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-2">
+          <div class="sfc-icon"><i class="fab fa-css3-alt"></i></div>
+          <span class="sfc-name">CSS3</span>
+          <span class="sfc-level">Layouts, animaciones, responsive</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-3">
+          <div class="sfc-icon"><i class="fab fa-js"></i></div>
+          <span class="sfc-name">JavaScript</span>
+          <span class="sfc-level">ES6+, DOM, APIs</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-4">
+          <div class="sfc-icon"><i class="fab fa-react"></i></div>
+          <span class="sfc-name">React</span>
+          <span class="sfc-level">Hooks, componentes, estado</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-1">
+          <div class="sfc-icon"><i class="fas fa-code"></i></div>
+          <span class="sfc-name">TypeScript</span>
+          <span class="sfc-level">Tipado estático</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-2">
+          <div class="sfc-icon"><i class="fas fa-mobile-alt"></i></div>
+          <span class="sfc-name">Responsive</span>
+          <span class="sfc-level">Mobile first, media queries</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-3">
+          <div class="sfc-icon"><i class="fab fa-git-alt"></i></div>
+          <span class="sfc-name">Git & GitHub</span>
+          <span class="sfc-level">Control de versiones</span>
+        </div>
+
+        <div class="skill-front-card reveal delay-4">
+          <div class="sfc-icon"><i class="fas fa-bolt"></i></div>
+          <span class="sfc-name">Vite</span>
+          <span class="sfc-level">Bundler & dev server</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="projects-section">
+      <div class="section-label reveal">Trabajos</div>
+      <h2 class="section-title reveal delay-1">Proyectos <em>Destacados</em></h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal delay-1">
+          <div class="project-number">01</div>
+          <div class="project-img">
+            <img src="./assets/korean.png" alt="Tienda Koreana">
+            <div class="project-img-overlay">
+              <div class="project-links-hover">
+                <a href="https://github.com/alexandragdiaz/Tienda-Koreana" target="_blank" aria-label="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://tienda-koreana.vercel.app/" target="_blank" aria-label="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Tienda Koreana</h3>
+            <p>E-commerce  de productos coreanos con catálogo e integración directa incluye WhatsApp para facilitar la atención con el cliente.</p>
+            <div class="project-tech">
+              <span>TypeScript</span><span>React</span><span>Vite</span><span>CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2">
+          <div class="project-number">02</div>
+          <div class="project-img">
+            <img src="./assets/tiendademascotas.png" alt="Pet Store">
+            <div class="project-img-overlay">
+              <div class="project-links-hover">
+                <a href="https://github.com/alexandragdiaz/Tienda-de-mascotas" target="_blank" aria-label="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://alexandragdiaz.github.io/Tienda-de-mascotas" target="_blank" aria-label="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Tienda de Mascotas</h3>
+            <p>E-commerce responsive para productos de mascotas.
+                Cuenta con carrito de compras y botón de WhatsApp para una atención más personalizada.
+            </p>
+            <div class="project-tech">
+              <span>Spring Boot</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-3">
+          <div class="project-number">03</div>
+          <div class="project-img">
+            <img src="./assets/proyecto nasa.png" alt="NASA APOD Explorer">
+            <div class="project-img-overlay">
+              <div class="project-links-hover">
+                <a href="https://github.com/alexandragdiaz/LAB-Using-NPM---End-of-module-Assessments" target="_blank" aria-label="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://alexandragdiaz.github.io/LAB-Using-NPM---End-of-module-Assessments/" target="_blank" aria-label="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>NASA APOD Explorer</h3>
+            <p>App que consume la API de NASA para visualizar y guardar las imágenes astronómicas del día.</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>API REST</span><span>NPM</span><span>CSS</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-inner">
+        <div class="section-label reveal">Transformando ideas en experiencias digitales.</div>
+        <h2 class="section-title reveal delay-1">Trabajemos <em>Juntos</em></h2>
+        <p class="contact-desc reveal delay-2">
+         ¿Tienes una idea en mente? Hagámosla realidad.
+        </p>
+
+        <div class="contact-links reveal delay-3">
+          <a href="mailto:alexagdiaz.01@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">alexagdiaz.01@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://wa.me/573042003759" target="_blank" class="contact-card whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <span class="contact-value">Escríbeme directo</span>
+            </div>
+          </a>
+          <a href="tel:+573042003759" class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <span class="contact-label">Teléfono</span>
+              <span class="contact-value">+57 304 200 3759</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  <a href="https://wa.me/573042003759" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">© 2026 Alexandra Díaz  <i class="fas fa-heart" aria-hidden="true"></i></p>
+      <div class="footer-links">
+        <a href="https://github.com/alexandragdiaz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alexandra-gutierrez-diaz-developer/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://tiktok.com/@dev.lover17" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
