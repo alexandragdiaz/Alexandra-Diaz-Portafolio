@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="shortcut icon" href="./favicon/a.png" type="image/x-icon">
 </head>
 <body>
 
@@ -20,6 +19,7 @@
       <li><a href="#hero">Inicio</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#cv">CV</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
@@ -33,6 +33,7 @@
       <li><a href="#hero" class="drawer-link">Inicio</a></li>
       <li><a href="#habilidades" class="drawer-link">Habilidades</a></li>
       <li><a href="#proyectos" class="drawer-link">Proyectos</a></li>
+      <li><a href="#cv" class="drawer-link">CV</a></li>
       <li><a href="#contacto" class="drawer-link">Contacto</a></li>
     </ul>
   </div>
@@ -52,7 +53,7 @@
     <div class="hero-container">
       <div class="hero-badge reveal">
         <span class="badge-dot"></span>
-        Disponible 
+        Disponible para proyectos
       </div>
 
       <h1 class="hero-name reveal delay-1">
@@ -62,11 +63,12 @@
       <div class="hero-meta reveal delay-2">
         <span class="hero-role">Desarrolladora Frontend</span>
         <span class="hero-sep">×</span>
-       
+        <span class="hero-role">Fullstack</span>
       </div>
 
       <p class="hero-desc reveal delay-3">
-        Transformo tu idea en una experiencia digital<br>
+        Construyo experiencias digitales que combinan<br>
+        diseño cuidadoso con código limpio y eficiente.
       </p>
 
       <div class="hero-actions reveal delay-4">
@@ -81,13 +83,13 @@
           <img src="./assets/img.jpeg" alt="Alexandra Díaz">
         </div>
         <div class="photo-tag">
-          <i class="fas fa-map-marker-alt"></i> Medellín, Colombia.
+          <i class="fas fa-map-marker-alt"></i> Colombia
         </div>
       </div>
     </div>
 
     <div class="hero-scroll-hint" aria-hidden="true">
-      <span>Ver más</span>
+      <span>Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </header>
@@ -96,7 +98,7 @@
 
     <!-- SKILLS -->
     <section class="skills-section" id="habilidades">
-      <div class="section-label reveal">Habilidades</div>
+      <div class="section-label reveal">Especialidades</div>
       <h2 class="section-title reveal delay-1">Desarrollo <em>Frontend</em></h2>
 
       <div class="skills-front-grid">
@@ -176,7 +178,8 @@
           </div>
           <div class="project-info">
             <h3>Tienda Koreana</h3>
-            <p>E-commerce  de productos coreanos con catálogo e integración directa incluye WhatsApp para facilitar la atención con el cliente.</p>
+            <p>Tienda virtual de productos coreanos con catálogo dinámico y carrito de compras interactivo.
+               Desarrollada con una interfaz responsiva y funcionalidades enfocadas en mejorar la experiencia de navegación y compra del usuario.</p>
             <div class="project-tech">
               <span>TypeScript</span><span>React</span><span>Vite</span><span>CSS</span>
             </div>
@@ -200,9 +203,7 @@
           </div>
           <div class="project-info">
             <h3>Tienda de Mascotas</h3>
-            <p>E-commerce responsive para productos de mascotas.
-                Cuenta con carrito de compras y botón de WhatsApp para una atención más personalizada.
-            </p>
+            <p>E-commerce con catálogo, carrito de compras y sistema de control de inventario.</p>
             <div class="project-tech">
               <span>Spring Boot</span><span>JavaScript</span><span>HTML</span><span>CSS</span>
             </div>
@@ -212,7 +213,7 @@
         <article class="project-card reveal delay-3">
           <div class="project-number">03</div>
           <div class="project-img">
-            <img src="./assets/proyecto nasa.png" alt="NASA APOD Explorer">
+            <img src="./assets/proyecto nasa.png" alt="Plataforma Web de Paquetes Turísticos">
             <div class="project-img-overlay">
               <div class="project-links-hover">
                 <a href="https://github.com/alexandragdiaz/LAB-Using-NPM---End-of-module-Assessments" target="_blank" aria-label="Ver código">
@@ -225,8 +226,8 @@
             </div>
           </div>
           <div class="project-info">
-            <h3>NASA APOD Explorer</h3>
-            <p>App que consume la API de NASA para visualizar y guardar las imágenes astronómicas del día.</p>
+            <h3>Plataforma Web de Paquetes Turísticos</h3>
+            <p>Plataforma web interactiva para explorar paquetes turísticos, gestionar un carrito de compras y visualizar destinos de forma dinámica mediante una interfaz responsiva..</p>
             <div class="project-tech">
               <span>JavaScript</span><span>API REST</span><span>NPM</span><span>CSS</span>
             </div>
@@ -236,13 +237,128 @@
       </div>
     </section>
 
+    <!-- CV -->
+    <section class="cv-section" id="cv">
+      <div class="cv-inner">
+
+        <div class="cv-left reveal">
+          <div class="section-label">Currículum</div>
+          <h2 class="section-title">Sobre <em>Mí</em></h2>
+
+          <!-- Resumen -->
+          <p class="cv-summary">
+            Desarrolladora Frontend en formación en Desarrollo de Software, con conocimientos en HTML, CSS, JavaScript y Bootstrap 
+            para la creación de interfaces web responsivas y enfocadas en la experiencia del usuario.
+          </p>
+
+          <!-- Timeline experiencia/formación -->
+          <div class="cv-timeline">
+
+            <div class="cv-block">
+              <span class="cv-block-tag">Formación</span>
+              <div class="cv-item">
+                <div class="cv-dot"></div>
+                <div>
+                  <span class="cv-year">2022 – 2025</span>
+                  <h4>Profesional en Desarrollo de Software</h4>
+                  <p>Uniremington — Medellín, Colombia</p>
+                </div>
+              </div>
+              <div class="cv-item">
+                <div class="cv-dot"></div>
+                <div>
+                  <span class="cv-year">Feb-2026 - Actualidad </span>
+                  <h4>Bootcamp Fullstack Web</h4>
+                  <p>Bootcamp en Desarrollo Java Full Stack con enfoque en frontend, desarrollando interfaces
+                     web responsivas con HTML, CSS, JavaScript y Bootstrap.
+                      Formación complementada con bases en tecnologías Full Stack como Java,
+                     Spring Boot y MySQL para la integración entre frontend, backend y bases de datos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <span class="cv-block-tag">Experiencia</span>
+              <div class="cv-item">
+                <div class="cv-dot"></div>
+                <div>
+                  <span class="cv-year">Abril 2026 - Mayo 2026</span>
+                  <h4>Desarrolladora Frontend Jr.</h4>
+                  <p>Tienda Online Interactiva – Paquetes de Viajes</p>
+                   <p>HTML5, CSS3, JavaScript, Bootstrap, Git, GitHub.</p>
+                </div>
+              </div>
+              <div class="cv-item">
+                <div class="cv-dot"></div>
+                <div>
+                  <span class="cv-year">Mayo 2026 – Mayo 2026</span>
+                  <h4>Desarrolladora Frontend Jr</h4>
+                  <p>Tienda Online de Skincare Coreano</p>
+                  <p>HTML5, CSS3, JavaScript, Bootstrap, Git, GitHubReact, Spring Boot, API REST</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Panel derecho: descarga -->
+        <div class="cv-right reveal delay-2">
+          <div class="cv-card">
+
+            <div class="cv-card-header">
+              <div class="cv-avatar">AD</div>
+              <div>
+                <p class="cv-card-name">Alexandra Díaz</p>
+                <p class="cv-card-role">Frontend Developer</p>
+              </div>
+            </div>
+
+            <div class="cv-card-stats">
+              <div class="cv-stat">
+                <span class="cv-stat-num">3+</span>
+                <span class="cv-stat-label">Proyectos</span>
+              </div>
+              <div class="cv-stat-divider"></div>
+              <div class="cv-stat">
+                <span class="cv-stat-num">5+</span>
+                <span class="cv-stat-label">Tecnologías</span>
+              </div>
+              <div class="cv-stat-divider"></div>
+              <div class="cv-stat">
+                <span class="cv-stat-num">2+</span>
+                <span class="cv-stat-label">Años aprendiendo</span>
+              </div>
+            </div>
+
+            <div class="cv-skills-mini">
+              <span>React</span><span>TypeScript</span><span>JavaScript</span>
+              <span>CSS3</span><span>HTML5</span><span>Git</span>
+              <span>Vite</span><span>Spring Boot</span>
+            </div>
+
+            <a href="./assets/CV Alexandra Gutiérrez Diaz .pdf" download class="btn-download">
+              <i class="fas fa-download"></i>
+              Descargar CV
+            </a>
+
+            <p class="cv-card-note">
+              <i class="fas fa-file-pdf"></i> PDF · Actualizado 2026
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- CONTACTO -->
     <section class="contact-section" id="contacto">
       <div class="contact-inner">
-        <div class="section-label reveal">Transformando ideas en experiencias digitales.</div>
+        <div class="section-label reveal">¿Hablamos?</div>
         <h2 class="section-title reveal delay-1">Trabajemos <em>Juntos</em></h2>
         <p class="contact-desc reveal delay-2">
-         ¿Tienes una idea en mente? Hagámosla realidad.
+          Siempre estoy abierta a nuevos proyectos, colaboraciones o simplemente una buena charla sobre tecnología.
         </p>
 
         <div class="contact-links reveal delay-3">
@@ -273,15 +389,15 @@
 
   </main>
 
-  
+  <!-- WhatsApp Float -->
   <a href="https://wa.me/573042003759" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
-      <p class="footer-copy">© 2026 Alexandra Díaz  <i class="fas fa-heart" aria-hidden="true"></i></p>
+      <p class="footer-copy">© 2026 Alexandra Díaz — Diseñado y desarrollado con <i class="fas fa-heart" aria-hidden="true"></i></p>
       <div class="footer-links">
         <a href="https://github.com/alexandragdiaz" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/alexandra-gutierrez-diaz-developer/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
