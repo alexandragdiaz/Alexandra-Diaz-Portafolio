@@ -40,7 +40,7 @@ Optimización visual para desktop y mobile
 
 E-commerce responsive de productos coreanos con catálogo dinámico y contacto directo por WhatsApp.
 
-🐾 Tienda de mascotas: Pet Chains
+🐾 Tienda de mascotas
 
 Tienda virtual responsive de accesorios para mascotas con enfoque visual moderno e integración de contacto rápido.
 
