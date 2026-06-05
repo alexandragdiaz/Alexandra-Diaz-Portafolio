@@ -1,4 +1,4 @@
-/* ============================================================
+/* 
    VARIABLES — Paleta rosada FCF5EE / FFC4C4 / EE6983 / 850E35
    ============================================================ */
 :root {
@@ -34,9 +34,7 @@
   --primary: var(--wine);
 }
 
-/* ============================================================
-   BASE
-   ============================================================ */
+/* BASE */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -51,9 +49,7 @@ img { display: block; max-width: 100%; }
 a   { text-decoration: none; color: inherit; }
 ul  { list-style: none; }
 
-/* ============================================================
-   SCROLL REVEAL
-   ============================================================ */
+/* SCROLL REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -67,9 +63,7 @@ ul  { list-style: none; }
 .delay-4 { transition-delay: 0.32s; }
 .delay-5 { transition-delay: 0.40s; }
 
-/* ============================================================
-   NAV — siempre visible con fondo vino
-   ============================================================ */
+/*NAV — siempre visible con fondo vino */
 .navbar {
   position: fixed;
   top: 0; left: 0;
@@ -90,7 +84,7 @@ ul  { list-style: none; }
 
 .nav-logo {
   font-family: 'Space Mono', monospace;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: -0.5px;
@@ -99,8 +93,8 @@ ul  { list-style: none; }
 
 .nav-links { display: flex; gap: 36px; }
 .nav-links a {
-  font-size: 0.85rem;
-  color: rgba(255,255,255,0.7);
+  font-size: 0.90rem;
+  color: rgb(255, 255, 255);
   letter-spacing: 0.02em;
   position: relative;
   transition: color 0.2s;
@@ -174,9 +168,7 @@ ul  { list-style: none; }
 }
 .nav-overlay.show { opacity: 1; pointer-events: all; }
 
-/* ============================================================
-   HERO
-   ============================================================ */
+/* HERO */
 .hero {
   min-height: 100dvh;
   position: relative;
@@ -229,7 +221,7 @@ ul  { list-style: none; }
   max-width: 1100px; width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 450px;
   grid-template-rows: auto auto auto auto auto;
   column-gap: 64px;
   align-items: center;
@@ -262,7 +254,7 @@ ul  { list-style: none; }
 .hero-name {
   grid-column: 1; grid-row: 2;
   font-family: 'DM Serif Display', serif;
-  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-size: clamp(3rem, 6vw, 5.5rem);
   line-height: 1.0; font-weight: 400;
   letter-spacing: -0.02em;
   color: var(--wine);
@@ -329,7 +321,7 @@ ul  { list-style: none; }
   display: flex; flex-direction: column; align-items: center; gap: 12px;
 }
 .photo-frame {
-  width: 100%; max-width: 280px; height: 360px;
+  width: 100%; max-width: 330px; height: 480px;
   border-radius: 160px 160px 20px 20px;
   overflow: hidden;
   border: 3px solid var(--pink-m);
@@ -374,9 +366,7 @@ ul  { list-style: none; }
 }
 @keyframes scrollAnim { 0% { left: -100%; } 100% { left: 100%; } }
 
-/* ============================================================
-   SECCIONES COMUNES
-   ============================================================ */
+/*SECCIONES COMUNES*/
 .section-label {
   font-family: 'Space Mono', monospace;
   font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
@@ -390,9 +380,7 @@ ul  { list-style: none; }
 }
 .section-title em { font-style: italic; color: var(--pink-m); }
 
-/* ============================================================
-   SKILLS — fondo crema con cards blancas
-   ============================================================ */
+/* SKILLS — fondo crema con cards blancas */
 .skills-section {
   padding: 100px 48px;
   max-width: 1100px;
@@ -430,9 +418,7 @@ ul  { list-style: none; }
 .sfc-name  { font-size: 0.9rem; font-weight: 600; color: var(--wine); }
 .sfc-level { font-size: 0.72rem; color: var(--text-muted); line-height: 1.4; }
 
-/* ============================================================
-   PROYECTOS — fondo ligeramente rosado
-   ============================================================ */
+/*PROYECTOS — fondo ligeramente rosado*/
 .projects-section {
   padding: 100px 48px;
   max-width: 1100px;
@@ -513,9 +499,7 @@ ul  { list-style: none; }
   background: rgba(238,105,131,0.07);
 }
 
-/* ============================================================
-   CV
-   ============================================================ */
+/* CV */
 .cv-section {
   padding: 100px 48px;
   background: linear-gradient(180deg, #FFF0F0 0%, #FCF5EE 100%);
@@ -717,9 +701,7 @@ ul  { list-style: none; }
   gap: 6px;
 }
 
-/* ============================================================
-   RESPONSIVE CV
-   ============================================================ */
+/* RESPONSIVE CV*/
 @media (max-width: 1024px) {
   .cv-section { padding: 90px 36px; }
   .cv-inner   { grid-template-columns: 1fr 320px; gap: 40px; }
@@ -742,9 +724,7 @@ ul  { list-style: none; }
   .cv-stat-num { font-size: 1.3rem; }
 }
 
-/* ============================================================
-   CONTACTO — fondo vino oscuro (inversión para impacto)
-   ============================================================ */
+/*CONTACTO — fondo vino oscuro (inversión para impacto)*/
 .contact-section {
   padding: 100px 48px 120px;
   text-align: center;
@@ -783,9 +763,7 @@ ul  { list-style: none; }
 .contact-label { font-size: 0.68rem; color: rgba(255,196,196,0.7); letter-spacing: 0.09em; text-transform: uppercase; font-family: 'Space Mono', monospace; }
 .contact-value { font-size: 0.88rem; color: #fff; }
 
-/* ============================================================
-   WHATSAPP FLOAT
-   ============================================================ */
+/* WHATSAPP FLOAT */
 .whatsapp-float {
   position: fixed; bottom: 26px; right: 26px;
   width: 52px; height: 52px; border-radius: 50%;
@@ -797,20 +775,16 @@ ul  { list-style: none; }
 }
 .whatsapp-float:hover { transform: scale(1.1) translateY(-2px); box-shadow: 0 8px 26px rgba(37,211,102,0.5); }
 
-/* ============================================================
-   FOOTER — tono oscuro vino
-   ============================================================ */
+/*FOOTER — tono oscuro vino */
 .footer { border-top: 1px solid rgba(255,255,255,0.1); padding: 26px 48px; background: #5c0922; }
 .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-.footer-copy  { font-size: 0.8rem; color: rgba(255,196,196,0.7); }
+.footer-copy  { font-size: 0.8rem; color: rgb(255, 254, 254); }
 .footer-copy .fa-heart { color: var(--pink-l); }
 .footer-links { display: flex; gap: 14px; }
-.footer-links a { color: rgba(255,196,196,0.6); font-size: 1.05rem; transition: color 0.2s, transform 0.2s; }
+.footer-links a { color: rgba(255, 255, 255, 0.959); font-size: 1.05rem; transition: color 0.2s, transform 0.2s; }
 .footer-links a:hover { color: var(--pink-l); transform: translateY(-2px); }
 
-/* ============================================================
-   RESPONSIVE — TABLET GRANDE (≤1024px)
-   ============================================================ */
+/* RESPONSIVE — TABLET GRANDE (≤1024px) */
 @media (max-width: 1024px) {
   .navbar          { padding: 16px 36px; }
   .navbar.scrolled { padding: 12px 36px; }
@@ -824,9 +798,7 @@ ul  { list-style: none; }
   .footer           { padding: 24px 36px; }
 }
 
-/* ============================================================
-   RESPONSIVE — TABLET (≤860px)
-   ============================================================ */
+/* RESPONSIVE — TABLET (≤860px)*/
 @media (max-width: 860px) {
   .navbar          { padding: 16px 24px; }
   .navbar.scrolled { padding: 12px 24px; }
@@ -863,9 +835,7 @@ ul  { list-style: none; }
   .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
 }
 
-/* ============================================================
-   RESPONSIVE — MÓVIL (≤600px)
-   ============================================================ */
+/* RESPONSIVE — MÓVIL (≤600px)*/
 @media (max-width: 600px) {
   .hero      { padding: 88px 18px 60px; }
   .hero-name { font-size: clamp(2.6rem, 12vw, 3.6rem); }
@@ -891,9 +861,7 @@ ul  { list-style: none; }
   .footer        { padding: 20px 18px; }
 }
 
-/* ============================================================
-   RESPONSIVE — MÓVIL PEQUEÑO (≤400px)
-   ============================================================ */
+/* RESPONSIVE — MÓVIL PEQUEÑO (≤400px) */
 @media (max-width: 400px) {
   .hero      { padding: 84px 14px 50px; }
   .hero-name { font-size: clamp(2.2rem, 14vw, 3rem); }

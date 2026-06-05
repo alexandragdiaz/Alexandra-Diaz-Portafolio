@@ -1,14 +1,14 @@
-/* ============================================================
+/* 
    SCROLL: clase .scrolled en navbar
-   ============================================================ */
+ */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
-/* ============================================================
+/* 
    HAMBURGER MENU (mobile)
-   ============================================================ */
+*/
 const navToggle = document.getElementById('navToggle');
 const navDrawer = document.getElementById('navDrawer');
 const navOverlay = document.getElementById('navOverlay');
@@ -37,9 +37,9 @@ document.querySelectorAll('.drawer-link').forEach(link => {
   link.addEventListener('click', closeMenu);
 });
 
-/* ============================================================
+/* 
    ACTIVE LINK según sección visible
-   ============================================================ */
+  */
 const sections = document.querySelectorAll('section[id], header[id]');
 const navAnchors = document.querySelectorAll('.nav-links a');
 
@@ -53,9 +53,9 @@ window.addEventListener('scroll', () => {
   });
 }, { passive: true });
 
-/* ============================================================
+/* 
    SCROLL REVEAL con IntersectionObserver
-   ============================================================ */
+   */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -72,9 +72,9 @@ document.querySelectorAll('.reveal').forEach(el => {
   revealObserver.observe(el);
 });
 
-/* ============================================================
+/*
    SMOOTH SCROLL para los anchors
-   ============================================================ */
+   */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const targetId = this.getAttribute('href');
